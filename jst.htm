@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Optimized Web Page</title>
+<style>
+/* Minified CSS */
+body{font-family:Arial,sans-serif}h1{color:#333}p{font-size:16px;line-height:1.6}
+button{padding:10px 20px;background-color:#007bff;color:#fff;border:none;border-radius:5px;cursor:pointer;}
+</style>
+</head>
+<body>
+
+<h1>Welcome to Optimized Web Page</h1>
+<p>This is a demonstration of an optimized and minified web page.</p>
+
+<button onclick="calculate()">Calculate</button>
+<p id="result"></p>
+
+<script>
+// Minified JavaScript
+function calculateSum(a,b){return a+b}
+function calculateProduct(a,b){return a*b}
+function calculate() {
+    var num1 = parseFloat(prompt("Enter the first number:"));
+    var num2 = parseFloat(prompt("Enter the second number:"));
+    var sum = calculateSum(num1, num2);
+    var product = calculateProduct(num1, num2);
+    document.getElementById("result").innerText = "Sum: " + sum + ", Product: " + product;
+}
+</script>
+
+</body>
+</html>
