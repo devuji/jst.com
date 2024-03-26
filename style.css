@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.editor-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.editor-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+.editor-header select,
+.editor-header button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.code-editor {
+    flex: 1;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+.output {
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-top: 1px solid #ccc;
+    overflow-y: auto;
+    max-height: 200px;
+}
